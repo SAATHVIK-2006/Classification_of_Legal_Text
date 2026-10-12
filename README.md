@@ -1,60 +1,46 @@
-\# Legal Text Classification
+# Legal Text Classification
 
-\## UE24CS352A - Machine Learning Mini Project
+**UE24CS352A – Machine Learning Mini Project**
 
+##  Project Overview
 
+Automatic classification of US Supreme Court opinions into legal issue areas using NLP and machine learning (LDA, Doc2Vec, and Logistic Regression).
 
-\### 📌 Project Overview
+##  Models Implemented
 
-Automatic classification of US Supreme Court legal opinions into 
+| Model | Accuracy |
+|-------|----------|
+| LDA + Logistic Regression | 64.35% |
+| Doc2Vec + Logistic Regression | 68.99% |
 
-legal issue areas using NLP and Machine Learning (LDA, Doc2Vec, 
+##  Dataset
 
-and Logistic Regression).
+- **Source:** `textacy.datasets.SupremeCourt()`
+- **Size:** 8,398 US Supreme Court decisions
+- **Period:** 1946–2018
+- **Labels:** Legal issue areas (14 categories)
 
+##  Setup Instructions
 
+### Prerequisites
 
-\### 🎯 Models Implemented
+- Google Colab or Python 3.x
+- Internet connection (for dataset download)
 
-\- LDA + Logistic Regression (Accuracy: 64.35%)
-
-\- Doc2Vec + Logistic Regression (Accuracy: 68.99%)
-
-
-
-\### 📊 Dataset
-
-\- Source: `textacy.datasets.SupremeCourt()`
-
-\- Size: 8,398 US Supreme Court decisions
-
-\- Period: 1946-2018
-
-\- Labels: Legal issue areas (14 categories)
-
-
-
-\### 🛠️ Setup Instructions
-
-
-
-\#### Prerequisites
-
-\- Google Colab or Python 3.x
-
-\- Internet connection (for dataset download)
-
-
-
-\#### Installation
+### Installation
 
 ```bash
-
 pip install floret==0.10.3
-
 pip install textacy==0.12.0
-
 pip install gensim
+python -m spacy download en_core_web_sm
+```
 
-python -m spacy download en\_core\_web\_sm
+## 👥 Authors
+
+| Name | SRN |
+|------|-----|
+| SAATHVIK SAI SUVARNA| PES1UG24AM238 |
+| PRITHVI RAJ | PES1UG24AM204 |
+
 
