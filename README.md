@@ -22,6 +22,15 @@ Automatic classification of US Supreme Court opinions into legal issue areas usi
 
 ##  Setup Instructions
 
+The following instructions detail how to set up the project environment.
+
+ Clone this repository to your local machine:
+   ```powershell
+   git clone [https://github.com/SAATHVIK-2006/Classification_of_Legal_Text.git]
+   cd Classification_of_Legal_Text
+   ``` 
+   
+   
 ### Prerequisites
 
 - Google Colab or Python 3.x
@@ -36,7 +45,9 @@ pip install gensim
 python -m spacy download en_core_web_sm
 ```
 
-## 👥 Authors
+   
+
+##  Authors
 
 | Name | SRN |
 |------|-----|
